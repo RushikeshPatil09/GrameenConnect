@@ -13,7 +13,8 @@ const center = {
 
 export default function ComplaintMap({ location }) {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "",
+    const googleApiKey = process.env.REACT_APP_GOOGLE_API_KEY;
+console.log("My API Key:", googleApiKey); 
   });
 
   if (!isLoaded) return <div>Loading Map...</div>;
