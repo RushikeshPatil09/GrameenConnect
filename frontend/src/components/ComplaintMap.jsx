@@ -13,7 +13,7 @@ const center = {
 
 export default function ComplaintMap({ location }) {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyAIzrqMd9ixVmmdiiNX19Sj-ksgr2fgx-c",
+    googleMapsApiKey: "",
   });
 
   if (!isLoaded) return <div>Loading Map...</div>;
